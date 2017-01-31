@@ -1,18 +1,21 @@
 {
   "name": "cd-core",
-  "version": "0.0.0-dev.1",
+  "version": "0.0.0-dev.2",
   "description": "Common utils used by CodeDungeon projects",
   "main": "index.js",
   "scripts": {
     "all": "npm run eslint",
     "test": "./node_modules/.bin/mocha --compilers js:babel-core/register",
     "test:watch": "./node_modules/.bin/mocha --compilers js:babel-core/register --watch",
-    "test:watch": "./node_modules/.bin/mocha --compilers js:babel-core/register --watch",
     "eslint": "./node_modules/.bin/eslint \"./**/*.js\"",
     "lint": "npm run eslint",
     "lint:watch": "./node_modules/.bin/esw --watch"
   },
-  "keywords": ["core","codedungeon","utils"],
+  "keywords": [
+    "core",
+    "codedungeon",
+    "utils"
+  ],
   "author": "Mike Erickson <codedungeon@gmail.com> (https://github.com/mikeerickson)",
   "license": "MIT",
   "devDependencies": {
