@@ -1,0 +1,21 @@
+{
+  "name": "cd-core",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --compilers js:babel-core/register",
+    "eslint": "./node_modules/.bin/eslint \"./**/*.js\"",
+    "lint": "npm run eslint"
+  },
+  "keywords": [],
+  "author": "Mike Erickson <codedungeon@gmail.com> (https://github.com/mikeerickson)",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "6.22.1",
+    "babel-preset-es2015-without-strict": "0.0.4",
+    "chai": "3.5.0",
+    "eslint": "3.14.1",
+    "mocha": "3.2.0"
+  }
+}
