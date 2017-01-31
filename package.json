@@ -1,6 +1,6 @@
 {
   "name": "cd-core",
-  "version": "0.0.0-dev.3",
+  "version": "0.0.0-dev.4",
   "description": "Common utils used by CodeDungeon projects",
   "main": "index.js",
   "scripts": {
@@ -29,11 +29,11 @@
     "chalk": "1.1.3"
   },
   "repository": {
-  "type": "git",
-  "url": "git+https://github.com/mikeerickson/cd-core.git"
-},
-"bugs": {
-  "url": "https://github.com/mikeerickson/cd-core/issues"
-},
-"homepage": "https://github.com/mikeerickson/cd-core#readme"
+    "type": "git",
+    "url": "git+https://github.com/mikeerickson/cd-core.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mikeerickson/cd-core/issues"
+  },
+  "homepage": "https://github.com/mikeerickson/cd-core#readme"
 }
