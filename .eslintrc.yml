@@ -7,7 +7,7 @@ parserOptions:
   sourceType: module
 rules:
   ##### Possible Errors #####
-  no-console: 1
+  no-console: 0
   no-debugger: 1
   no-dupe-args: 1
   no-dupe-keys: 1
@@ -82,7 +82,7 @@ rules:
   operator-linebreak: 0
   quotes: [1, 'single', 'avoid-escape'] # fixable
   # semi: [1, 'always'] # fixable
-  semi: 0 # fixable
+  semi: 1 # fixable
   space-before-function-paren: [1, {anonymous: 'always', named: 'never'}] # fixable
   space-in-parens: 1
   space-infix-ops: 2 # fixable

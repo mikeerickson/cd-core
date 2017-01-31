@@ -7,8 +7,10 @@
     "all": "npm run eslint",
     "test": "./node_modules/.bin/mocha --compilers js:babel-core/register",
     "test:watch": "./node_modules/.bin/mocha --compilers js:babel-core/register --watch",
+    "test:watch": "./node_modules/.bin/mocha --compilers js:babel-core/register --watch",
     "eslint": "./node_modules/.bin/eslint \"./**/*.js\"",
-    "lint": "npm run eslint"
+    "lint": "npm run eslint",
+    "lint:watch": "./node_modules/.bin/esw --watch"
   },
   "keywords": [],
   "author": "Mike Erickson <codedungeon@gmail.com> (https://github.com/mikeerickson)",
@@ -19,5 +21,8 @@
     "chai": "3.5.0",
     "eslint": "3.14.1",
     "mocha": "3.2.0"
+  },
+  "dependencies": {
+    "chalk": "1.1.3"
   }
 }

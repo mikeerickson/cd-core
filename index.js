@@ -1,9 +1,22 @@
-const path = require('path');
+const core    = require('./src/cd-core');
+const pkgInfo = require('./package.json');
 
-let core = {
+// module entry points
+const CoreModule = {
+  name: pkgInfo.name,
+  version: pkgInfo.version,
   getAssetPath: () => {
-    return 'asset-path';
+    return core.getAssetPath();
+  },
+  getModuleIcon: () => {
+    return core.getModuleIcon();
+  },
+  getFailIcon: () => {
+    return core.getFailIcon();
+  },
+  getPassIcon: () => {
+    return core.getPassIcon();
   }
-}
+};
 
-module.exports = core
+module.exports = CoreModule;
