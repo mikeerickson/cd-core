@@ -1,10 +1,11 @@
 {
   "name": "cd-core",
-  "version": "0.0.0-dev.7",
+  "version": "0.0.0-dev.8",
   "description": "Common utils used by CodeDungeon projects",
   "main": "index.js",
   "scripts": {
     "all": "npm run eslint",
+    "bump-pre": "bump prerelease",
     "test": "./node_modules/.bin/mocha --compilers js:babel-core/register",
     "test:watch": "./node_modules/.bin/mocha --compilers js:babel-core/register --watch",
     "eslint": "./node_modules/.bin/eslint \"./**/*.js\"",
