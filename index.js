@@ -1,7 +1,7 @@
 const path = require('path');
 
 let core = {
-  getAssetPath: function() {
+  getAssetPath: () => {
     return 'asset-path';
   }
 }
