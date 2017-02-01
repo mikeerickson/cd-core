@@ -7,8 +7,9 @@ let expect    = TestUtils.expect;
 
 let pkgInfo   = require('../package.json');
 
+
 describe('cd-core', () => {
-  const pkgPath = path.dirname(__dirname);
+  const PKG_PATH = path.dirname(__dirname);
 
   beforeEach(() =>{
   });
@@ -22,19 +23,19 @@ describe('cd-core', () => {
   });
 
   it('should return asset path', () => {
-    expect(core.getAssetPath()).to.equal(path.join(pkgPath,'assets'));
+    expect(core.getAssetPath()).to.equal(path.join(PKG_PATH,'assets'));
   });
 
   it('should return module icon path', () => {
-    expect(core.getModuleIcon()).to.equal(path.join(pkgPath,'assets','cd-logo.png'));
+    expect(core.getModuleIcon()).to.equal(path.join(PKG_PATH,'assets','cd-logo.png'));
   });
 
   it('should return fail icon path', () => {
-    expect(core.getFailIcon()).to.equal(path.join(pkgPath,'assets','red.png'));
+    expect(core.getFailIcon()).to.equal(path.join(PKG_PATH,'assets','red.png'));
   });
 
   it('should return pass icon path', () => {
-    expect(core.getPassIcon()).to.equal(path.join(pkgPath,'assets','green.png'));
+    expect(core.getPassIcon()).to.equal(path.join(PKG_PATH,'assets','green.png'));
   });
 
 });

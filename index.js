@@ -1,5 +1,6 @@
-const core    = require('./src/cd-core');
-const pkgInfo = require('./package.json');
+const core     = require('./src/cd-core');
+const notifier = require('./src/cd-notifier');
+const pkgInfo  = require('./package.json');
 
 // module entry points
 const CoreModule = {
@@ -16,6 +17,15 @@ const CoreModule = {
   },
   getPassIcon: () => {
     return core.getPassIcon();
+  },
+  notify: (msg = '', options = {showConsole: true}) => {
+    return notifier.notify(msg, options);
+  },
+  notifyPass: (msg = '', options = {showConsole: true}) => {
+    return notifier.notifyPass(msg, options);
+  },
+  notifyFail: (msg = '', options = {showConsole: true}) => {
+    return notifier.notifyFail(msg, options);
   }
 };
 
