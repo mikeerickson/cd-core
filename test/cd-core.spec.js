@@ -1,6 +1,7 @@
 let TestUtils = require('./test_helpers');
 let core      = require('../index');
 let path      = require('path');
+let chalk     = require('chalk');
 
 let should    = TestUtils.should;
 let expect    = TestUtils.expect;
@@ -10,6 +11,7 @@ let pkgInfo   = require('../package.json');
 
 describe('cd-core', () => {
   const PKG_PATH = path.dirname(__dirname);
+  const testPad  = '      ';
 
   beforeEach(() =>{
   });
@@ -36,6 +38,12 @@ describe('cd-core', () => {
 
   it('should return pass icon path', () => {
     expect(core.getPassIcon()).to.equal(path.join(PKG_PATH,'assets','green.png'));
+  });
+
+  it('should correct platform check', () => {
+    console.log(chalk.cyan.bold(testPad + '==> isOSX:     ', core.isOSX()));
+    console.log(chalk.cyan.bold(testPad + '==> isWindows: ', core.isWindows()));
+    console.log(chalk.cyan.bold(testPad + '==> isLinux:   ', core.isLinux()));
   });
 
 });

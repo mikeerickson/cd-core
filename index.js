@@ -4,8 +4,12 @@ const pkgInfo  = require('./package.json');
 
 // module entry points
 const CoreModule = {
-  name: pkgInfo.name,
-  version: pkgInfo.version,
+  name:      pkgInfo.name,
+  version:   pkgInfo.version,
+  isWindows: core.isWindows,
+  isOSX:     core.isOSX,
+  isLinux:   core.isLinux,
+
   getAssetPath: () => {
     return core.getAssetPath();
   },

@@ -2,7 +2,6 @@ const core     = require('./cd-core');
 const chalk    = require('chalk');
 const notifier = require('node-notifier');
 const path     = require('path');
-const _        = require('lodash');
 
 const cd_notifier = {
   notifyOptions: function (status, override) {

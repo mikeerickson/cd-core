@@ -15,7 +15,10 @@ const cd_core = {
   },
   getPassIcon: () => {
     return path.join(cd_core.getAssetPath(),'green.png');
-  }
+  },
+  isWindows: () => { return /^win/.test(process.platform); },
+  isOSX: () => { return /^darwin/.test(process.platform); },
+  isLinux: () => { return /^linux/.test(process.platform); }
 };
 
 module.exports = cd_core;

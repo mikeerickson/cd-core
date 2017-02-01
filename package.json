@@ -3,8 +3,10 @@
   "version": "0.0.5",
   "description": "Common utils used by CodeDungeon projects",
   "main": "index.js",
+  "reveal": true,
   "scripts": {
     "all": "npm run eslint",
+    "coverage": "nyc npm test",
     "bump-pre": "bump prerelease",
     "test": "./node_modules/.bin/mocha --compilers js:babel-core/register",
     "test:watch": "./node_modules/.bin/mocha --compilers js:babel-core/register --watch",
@@ -16,7 +18,9 @@
   "keywords": [
     "core",
     "codedungeon",
-    "utils"
+    "utils",
+    "notifier",
+    "messenger"
   ],
   "author": "Mike Erickson <codedungeon@gmail.com> (https://github.com/mikeerickson)",
   "license": "MIT",
@@ -25,7 +29,8 @@
     "babel-preset-es2015-without-strict": "0.0.4",
     "chai": "3.5.0",
     "eslint": "3.14.1",
-    "mocha": "3.2.0"
+    "mocha": "3.2.0",
+    "nyc": "10.1.2"
   },
   "dependencies": {
     "cd-messenger": "2.7.12",
