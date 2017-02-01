@@ -10,7 +10,8 @@
     "test:watch": "./node_modules/.bin/mocha --compilers js:babel-core/register --watch",
     "eslint": "./node_modules/.bin/eslint \"./**/*.js\"",
     "lint": "npm run eslint",
-    "lint:watch": "./node_modules/.bin/esw --watch"
+    "lint:watch": "./node_modules/.bin/esw --watch",
+    "publish": "npm run eslint"
   },
   "keywords": [
     "core",
