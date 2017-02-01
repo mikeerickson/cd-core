@@ -1,6 +1,6 @@
 {
   "name": "cd-core",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Common utils used by CodeDungeon projects",
   "main": "index.js",
   "scripts": {
