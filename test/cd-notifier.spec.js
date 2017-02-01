@@ -13,6 +13,10 @@ describe('cd-notifier', () => {
   beforeEach(() =>{
   });
 
+  it('should display a blank message', () => {
+    core.notify();
+  });
+
   it('should display general notification message', () => {
     core.notify(testPad + '==> myMsg');
     core.notify(testPad + '==> myMsg (Console Disabled)', {showConsole: false});
