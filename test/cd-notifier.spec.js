@@ -9,7 +9,6 @@ let pkgInfo   = require('../package.json');
 
 describe('cd-notifier', () => {
   const PKG_PATH = path.dirname(__dirname);
-  const testPad  = '      ';
   beforeEach(() =>{
   });
 
@@ -18,18 +17,18 @@ describe('cd-notifier', () => {
   });
 
   it('should display general notification message', () => {
-    core.notify(testPad + '==> myMsg');
-    core.notify(testPad + '==> myMsg (Console Disabled)', {showConsole: false});
+    core.notify('==> myMsg');
+    core.notify('==> myMsg (Console Disabled)', {showConsole: false});
   });
 
   it('should display passing notification message', () => {
-    core.notifyPass(testPad + '==> myPassingMessage');
-    core.notifyPass(testPad + '==> myPassingMessage (Console Disabled)', {showConsole: false});
+    core.notifyPass('==> myPassingMessage');
+    core.notifyPass('==> myPassingMessage (Console Disabled)', {showConsole: false});
   });
 
   it('should display failing notification message', () => {
-    core.notifyFail(testPad + '==> myFailingMessage');
-    core.notifyFail(testPad + '==> myFailingMessage (Console Disabled)', {showConsole: false});
+    core.notifyFail('==> myFailingMessage');
+    core.notifyFail('==> myFailingMessage (Console Disabled)', {showConsole: false});
   });
 
 });

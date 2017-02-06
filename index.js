@@ -2,6 +2,10 @@ const core     = require('./src/cd-core');
 const notifier = require('./src/cd-notifier');
 const pkgInfo  = require('./package.json');
 
+const FAIL_CLI_ICON = '✘';
+const PASS_CLI_ICON = '✓';
+const WARN_CLI_ICON = '♺';
+
 // module entry points
 const CoreModule = {
   name:      pkgInfo.name,
@@ -9,6 +13,9 @@ const CoreModule = {
   isWindows: core.isWindows,
   isOSX:     core.isOSX,
   isLinux:   core.isLinux,
+  cliIconFail: FAIL_CLI_ICON,
+  cliIconPass: PASS_CLI_ICON,
+  cliIconWarn: WARN_CLI_ICON,
 
   getAssetPath: () => {
     return core.getAssetPath();
