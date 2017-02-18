@@ -23,6 +23,9 @@ const CoreModule = {
   getModuleIcon: () => {
     return core.getModuleIcon();
   },
+  getInfoIcon: () => {
+    return core.getInfoIcon();
+  },
   getFailIcon: () => {
     return core.getFailIcon();
   },
